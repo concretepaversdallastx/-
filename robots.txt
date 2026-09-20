@@ -1,0 +1,32 @@
+# robots.txt — concretepaversdallastx.com
+
+User-agent: *
+Allow: /
+
+# Block low-value / duplicate URLs
+Disallow: /*?s=
+Disallow: /*?replytocom=
+Disallow: /search
+Disallow: /cgi-bin/
+
+# Allow assets so Google can render the page correctly
+Allow: /images/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.svg$
+
+# Aggressive SEO crawlers (optional — remove if you use these tools)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
+
+Sitemap: https://concretepaversdallastx.com/sitemap.xml
